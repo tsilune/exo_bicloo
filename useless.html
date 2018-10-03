@@ -1,0 +1,29 @@
+var currentTbody = document.createElement('tbody');
+var currentTr = document.createElement('tr');
+var currentTd= document.createElement('td');
+
+for (var j = 0; j < 3; j++) {
+
+  var cellText = document.createTextNode(stations[i].name +
+  stations[i].empty_slots +
+  stations[i].free_bikes);
+
+  currentTd.appendChild(cellText);
+  currentTr.appendChild(currentTd);
+}
+currentTbody.appendChild(currentTr);
+// // var nomStation = stations[i].name;
+// // var placesLibres = stations[i].empty_slots;
+// // var velosDispos = stations[i].free_bikes;
+// // var detailsStation =
+// // stations[i].name +
+// // stations[i].empty_slots +
+// // stations[i].free_bikes;
+//
+// currentTd.textContent = stations[i].name;
+// currentTr.appendChild(currentTd);
+// currentTr.appendChild(currentTd);
+// currentTr.appendChild(currentTd);
+//
+// currentTr.textContent = detailsStation;
+tableauStations.appendChild(currentTbody);
